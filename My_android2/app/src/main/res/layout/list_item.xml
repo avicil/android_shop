@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#c5c9f4">
+
+    <RelativeLayout
+        android:id="@+id/Re1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp">
+    <ImageView
+        android:id="@+id/iv"
+        android:layout_width="match_parent"
+        android:layout_height="250dp" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:layout_below="@+id/Re1"
+        android:background="#fff"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp">
+    <TextView
+        android:id="@+id/content_name"
+        android:layout_width="240dp"
+        android:layout_height="wrap_content"
+        android:text="Apple/苹果 iphone 11 Pro"
+        android:textSize="20dp"
+        android:textColor="#282727"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="20dp" />
+    <TextView
+        android:id="@+id/content_price"
+        android:layout_width="80dp"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="15dp"
+        android:layout_marginTop="20dp"
+        android:text="￥9999.00"
+        android:textColor="#EE6921"
+        android:textSize="17dp"
+        android:layout_alignParentRight="true"/>
+    <TextView
+        android:id="@+id/content_introduction"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="6.1英寸 A13处理器"
+        android:textColor="#cacaca"
+        android:textSize="14dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="16dp"
+        android:layout_below="@+id/content_name"/>
+    <Button
+        android:id="@+id/content_btn"
+        android:layout_width="100dp"
+        android:layout_height="35dp"
+        android:text="加入购物车"
+        android:textSize="15dp"
+        android:background="#ea625b"
+        android:layout_marginRight="15dp"
+        android:layout_marginTop="5dp"
+        android:layout_below="@+id/content_price"
+        android:layout_alignParentRight="true"
+        android:onClick="onClick" />
+    </RelativeLayout>
+</RelativeLayout>

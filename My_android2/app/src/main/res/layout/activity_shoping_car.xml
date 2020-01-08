@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#fff">
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:text="小炜购物车"
+        android:textColor="#fff"
+        android:gravity="center"
+        android:background="#EB9205"
+        android:textSize="20dp"/>
+
+    <ListView
+        android:id="@+id/list_two"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1" />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#fff">
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center">
+            <ImageView
+                android:id="@+id/pic1"
+                android:layout_width="30dp"
+                android:layout_height="40dp"
+                android:src="@drawable/zy1"
+                android:onClick="onClick"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="首页"
+                android:layout_below="@+id/pic1"
+                android:textColor="#999" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center">
+            <ImageView
+                android:id="@+id/pic2"
+                android:layout_width="30dp"
+                android:layout_height="40dp"
+                android:src="@drawable/fl"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="分类"
+                android:layout_below="@+id/pic2"
+                android:textColor="#999" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center">
+            <ImageView
+                android:id="@+id/pic3"
+                android:layout_width="30dp"
+                android:layout_height="40dp"
+                android:src="@drawable/gwc1"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="购物车"
+                android:layout_below="@+id/pic3"
+                android:textColor="#999" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center">
+            <ImageView
+                android:id="@+id/pic4"
+                android:layout_width="30dp"
+                android:layout_height="40dp"
+                android:src="@drawable/wd"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="我的"
+                android:layout_below="@+id/pic4"
+                android:textColor="#999" />
+        </RelativeLayout>
+    </LinearLayout>
+</LinearLayout>
